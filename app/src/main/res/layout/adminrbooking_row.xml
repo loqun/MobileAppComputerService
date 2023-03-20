@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="8dp"
+    app:cardCornerRadius="16dp"
+    app:cardUseCompatPadding="true"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintTop_toTopOf="parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/img_beverage"
+            android:layout_width="399dp"
+            android:layout_height="221dp"
+            android:background="#FF0000"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintDimensionRatio="h,16:6"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.333"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/booking_row_orange" />
+
+        <TextView
+            android:id="@+id/tv_nameCrew"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="16dp"
+            android:gravity="left"
+            android:text="Haqiem Rusli"
+            android:textColor="#212121"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_crewProgress"
+            android:layout_width="186dp"
+            android:layout_height="28dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="48dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="Performance/Entertainment"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_nameCrew" />
+
+        <TextView
+            android:id="@+id/tv_crewQuantity"
+            android:layout_width="83dp"
+            android:layout_height="32dp"
+            android:layout_marginTop="72dp"
+            android:layout_marginRight="25dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="Paid"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/button_delete_booking"
+            app:layout_constraintTop_toBottomOf="@+id/tv_nameCrew" />
+
+        <Button
+            android:id="@+id/button_delete_booking"
+            android:layout_width="44dp"
+            android:layout_height="39dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/ic_baseline_edit_24"
+            app:backgroundTint="#1E8FFE"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_nameCrew"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tv_nameCrew"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <Button
+            android:id="@+id/delbut"
+            android:layout_width="50dp"
+            android:layout_height="41dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="11dp"
+            android:background="@drawable/delete"
+            android:backgroundTint="#FF0303"
+            android:textColorLink="#FF0000"
+            app:layout_constraintEnd_toStartOf="@+id/button_delete_booking"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="20dp"
+            android:text="TextView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_crewProgress" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
